@@ -1,0 +1,281 @@
+* {
+  border: none;
+  box-sizing: border-box;
+  font-family: Roboto,sans-serif;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+
+body{
+  background: black;
+  overflow-x : hidden;
+}
+
+.header {
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 7%;
+  border-bottom: 0.4rem solid #ffc107;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index : 1000;
+}
+
+ .navbar{
+  position: relative;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: left;
+  justify-content: flex-start;
+}
+.navbar a{
+  text-decoration: none;
+  margin-left: 140px;
+  margin-top: 10px;
+  font-size: 16px;
+  color: yellow;
+  transition: .3s linear;
+}
+
+.navbar a:hover{
+  color: red;
+  background: yellow;
+  border-radius: 30px;
+}
+
+.navbar .login{
+  background-color: red;
+  color: white; 
+  border: none;
+  margin-left: 150px; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  justify-content: space-between;
+  transition: background-color 0.3s ease; 
+}
+
+.navbar .login:hover{
+  background: rgb(234, 0, 255);
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 10px 3%;
+  }
+
+  .navbar {
+    height: auto; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    justify-content: center; 
+  }
+
+  .navbar a {
+    margin: 5px 0;
+  }
+}
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(90deg, rgb(0 0 0 / 90%) rgb(70, 70, 70/35%));
+  background-image: url(images/carne.jpg);
+  background-size: cover;
+}
+
+.content {
+  display: flex;
+  background: linear-gradient(rgba(0, 0, 0, 0.315), rgba(0, 0, 0, 0.849)); 
+  flex-direction: column;
+  text-align: center; 
+  justify-content: flex-start;
+}
+
+.content h1 {
+  font-size: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  word-break: break-all;
+}
+
+.content h2 {
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: yellow;
+  word-break: break-all;
+}
+
+.content p{
+  font-size: 22px;
+  color: #fff;
+  text-transform: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about .heading{
+  color: yellow;
+  font-size: 50px; 
+  display: flex;
+  margin-left: 42%;
+  letter-spacing: 1px;
+}
+
+.about .row{
+  align-items: center;
+  background: black;
+  display: flex;
+  justify-content: center;
+}
+
+.about .row .imagem{
+  flex : 1;
+}
+
+.about .row .imagem img{
+  width: 100%;
+}
+
+.about .row .content{
+  flex: 1;
+  padding: 0 20px;
+  text-align: center;
+}
+.about .row .content h1{
+  font-size: 2rem;
+  color: #fff;
+}
+
+.about .row .content p{
+  font-size: 20px;
+  color: #fff;
+  padding: 1rem 0;
+  line-height: 2.0;
+  text-transform: none;
+}
+
+.menu_container{
+  margin: 0px;
+  padding: 30px;
+}
+
+
+.menu_title{
+  text-align: center;
+  color: yellow;
+  font-size: 50px;
+  text-transform: none;
+  letter-spacing: 1px;
+}
+.menu_subtitle{
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  text-transform: none;
+}
+
+.cards_container {
+  display: flex;
+  margin-top: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.menu_container .cards_container .box{
+  border: 3px solid yellow;
+}
+
+.menu_container .cards_container .box img{
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.menu_container .cards_container .box .title{
+  color: yellow;
+  font-size: 20px;
+  margin-left: 60px;
+}
+
+.menu_container .cards_container .box .title:hover{
+  color: red;
+  background: black;
+  border-radius: 20px;
+}
+
+.menu_container .cards_container .box .price{
+  text-align: center;
+  color: yellow;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 1px;
+}
+
+.menu_container .cards_container .box .price:hover{
+  color: red;
+  background: black;
+  border-radius: 20px;
+}
+
+.menu_container .cards_container .box button{
+  background-color: black;
+}
+
+.menu_container .cards_container .box .go{
+  color: yellow;
+  font-size: 20px;
+  border-radius: 10rem;
+  text-align: center; 
+  margin-left: 60px;
+  border: 3px solid red;
+  text-transform: none;
+}
+
+.menu_container .cards_container .box .go:hover{
+  color: yellow;
+  background: red;
+
+}
+
+.professional_container{
+  margin: 10px;
+  padding: 30px;
+}
+
+.professional_title{
+  text-align: center;
+  color: yellow;
+  font-size: 30px;
+  text-transform: none;
+  letter-spacing: 1px;
+}
+
+.professional_container .cards_professional{
+  display: flex;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 10px 20px 10px;
+}
+
+.cards_professional .box_professional img{
+  width: 200px; 
+  border: 3px solid yellow;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  overflow: hidden
+}
